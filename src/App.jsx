@@ -1,6 +1,7 @@
 import { CORE_CONCEPTS } from './data.js';
 import Header from './components/Header';
 import CoreConcept from './components/CoreConcept';
+import TabButton from './components/TabButton.jsx';
 
 function App() {
   return (
@@ -16,14 +17,22 @@ function App() {
               image={CORE_CONCEPTS[0].image}
             />
 
-          {/* alternative to the above code */}
-           <CoreConcept {...CORE_CONCEPTS[1]} />
-           <CoreConcept {...CORE_CONCEPTS[2]} />
-           <CoreConcept {...CORE_CONCEPTS[3]} />
-          
+            {/* alternative to the above code */}
+            <CoreConcept {...CORE_CONCEPTS[1]} />
+            <CoreConcept {...CORE_CONCEPTS[2]} />
+            <CoreConcept {...CORE_CONCEPTS[3]} />
+
           </ul>
         </section>
-        <h2>Time to get started!</h2>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton>Components</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
+          </menu>
+        </section>
       </main>
     </div>
   );
