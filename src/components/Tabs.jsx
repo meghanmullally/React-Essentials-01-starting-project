@@ -1,6 +1,5 @@
-export default function Tabs({ children, buttons, buttonsContainer }) {
-    
-    const ButtonsContainer = buttonsContainer;
+export default function Tabs({ children, buttons, ButtonsContainer = 'menu' }) {
+    // setting default prop value for ButtonContainer
 
     return <>
             <ButtonsContainer>

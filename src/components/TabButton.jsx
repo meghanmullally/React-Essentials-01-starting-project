@@ -4,11 +4,11 @@ export default function TabButton({ children, isSelected, ...props }) {
     // })
 
     return (
-        <liv>
+        <li>
             <button className={isSelected ? 'active' : undefined} {...props}>
                 {children}
                 </button>
-        </liv>
+        </li>
     );
 }
 
