@@ -1,11 +1,13 @@
-export default function TabButton({ children, onSelect, isSelected }) {
+export default function TabButton({ children, isSelected, ...props }) {
     // vanilla js
     // document.querySelector('button').addEventListener('click', ()=> {
     // })
 
     return (
         <liv>
-            <button className={isSelected ? 'active' : undefined} onClick={onSelect}>{children}</button>
+            <button className={isSelected ? 'active' : undefined} {...props}>
+                {children}
+                </button>
         </liv>
     );
 }
